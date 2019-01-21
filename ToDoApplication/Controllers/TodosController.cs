@@ -19,6 +19,7 @@ namespace DotNetAppSqlDb.Controllers
         public ActionResult Index()
         {
                 con.Open();
+
                 SqlCommand com = new SqlCommand(); 
                 com.Connection = con; 
                 com.CommandType = CommandType.Text; 
