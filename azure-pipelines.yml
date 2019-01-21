@@ -5,6 +5,8 @@
 
 trigger:
 - master
+- dev
+- qa
 
 pool:
   vmImage: 'VS2017-Win2016'
