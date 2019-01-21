@@ -18,7 +18,7 @@ namespace DotNetAppSqlDb.Controllers
         // GET: Todos
         public ActionResult Index()
         {
-                con.Open();
+            con.Open();
                 SqlCommand com = new SqlCommand(); 
                 com.Connection = con; 
                 com.CommandType = CommandType.Text; 
@@ -37,7 +37,6 @@ namespace DotNetAppSqlDb.Controllers
                 }
                 
                 return View(data);
-           
         }
 
         // GET: Todos/Details/5
